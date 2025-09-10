@@ -25,7 +25,7 @@ export default function Actions({ route, navigation }) {
           <Text style={styles.infoText}>Админ: {admin}</Text>
         </View>
         <View style={styles.row}>
-          <Ionicons name="phone-portrait" size={22} color="#64748b" style={styles.icon} />
+          <Ionicons name="hardware-chip-outline" size={22} color="#64748b" style={styles.icon} />
           <Text style={styles.infoText}>Төхөөрөмж: {device}</Text>
         </View>
       </View>

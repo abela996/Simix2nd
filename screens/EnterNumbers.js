@@ -59,7 +59,7 @@ export default function EnterNumbers({ navigation }) {
 
       {/* Төхөөрөмжийн дугаар */}
       <View style={styles.box}>
-        <Ionicons name="phone-portrait" size={24} color="#64748b" style={styles.icon} />
+        <Ionicons name="hardware-chip-outline" size={24} color="#64748b" style={styles.icon} />
         <View style={{ flex: 1 }}>
           <Text style={styles.label}>Төхөөрөмжийн дугаар</Text>
           <TextInput

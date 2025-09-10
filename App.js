@@ -24,12 +24,15 @@ function DevicesStack() {
       <Stack.Screen
         name="LoginHistory"
         component={LoginHistory}
-        options={{ title: 'Хадгалсан төхөөрөмжүүд' }}  // ← энд header дээр гарна
+        options={{ title: 'Хадгалагдсан төхөөрөмжүүд' }}
       />
       <Stack.Screen
         name="Actions"
         component={Actions}
-        options={{ title: 'Үйлдэл' }}
+        options={{
+          title: '',
+          headerBackVisible: false, // 🔥 зөвхөн буцах товчийг нуух
+        }}
       />
     </Stack.Navigator>
   );
@@ -58,7 +61,7 @@ export default function App() {
             if (route.name === 'Home') {
               iconName = 'home-outline';
             } else if (route.name === 'Devices') {
-              iconName = 'phone-portrait-outline';
+              iconName = 'wifi-outline';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
